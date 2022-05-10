@@ -1,13 +1,11 @@
-package model;
-
-import javax.persistence.*;
+package com.example.demo.model;
 
 import lombok.AllArgsConstructor;
-        import lombok.Getter;
-        import lombok.NoArgsConstructor;
-        import lombok.Setter;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-      
+import javax.persistence.*;
 
 @Entity
 @Getter
@@ -20,14 +18,23 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-
     private String name;
-
     private String surname;
-
     private String email;
 
-    @ManyToMany
-    private Set<> roles;
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
